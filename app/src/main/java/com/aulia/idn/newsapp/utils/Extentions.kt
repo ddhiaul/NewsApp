@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 
-fun ImageView.loadImage(url:String){
+fun ImageView.loadImage(url:String?){
     Glide.with(this)
         .load(url)
         .into(this)

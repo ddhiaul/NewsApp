@@ -11,6 +11,6 @@ data class ArticleItem(
     val publishedAt: String,
     val source: SourceItem,
     val title: String,
-    val url: String,
+    val url: String? = null,
     val urlToImage: String
 ): Parcelable
